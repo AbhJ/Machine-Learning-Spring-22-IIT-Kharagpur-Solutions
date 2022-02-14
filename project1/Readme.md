@@ -23,5 +23,3 @@ It calls the method **`attribute_for_optimal_splitting_at_node`** to find the at
 In case of any further queries feel free to contact
 
  - Abhijay Mitra
- - mitraabhijay@gmail.com
-
