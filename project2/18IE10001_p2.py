@@ -1,3 +1,6 @@
+# Roll Number:       18IE10001
+# Name:              Abhijay Mitra
+# Assignment number: 2
 import pandas as pd
 import numpy as np
 import math
@@ -99,7 +102,11 @@ for i in qnt:
     test[test.columns[i]] = np.divide(
         np.subtract(np.array(test[test.columns[i]]), db[i][0]), db[i][1]
     )
-for k in range(1, 300):
+
+
+
+def print_helper(k):
+    print("k = ", end="")
     print("{0:03}".format(k), ": ", end="")
     for i in test.index:
         testRow = []
@@ -107,8 +114,26 @@ for k in range(1, 300):
             testRow.append(test[x][i])
         print(
             is_the_majority_voting(
-                dataPrime, list_of_neighbors(get_distance_list(dataPrime, testRow), k)
+                dataPrime,
+                list_of_neighbors(get_distance_list(dataPrime, testRow), k),
             ),
             end=" ",
         )
     print()
+
+while 1:
+	input_char = input(
+		"Enter k manually? (Press 'Y' for Yes and 'N' for No and hit Return/Enter): "
+	)
+	if input_char.upper() == "N":
+		print("The optimal value of k is 18.")
+		print_helper(18)
+		print("Now, let us see the output for other values too.\nIterating over k from 1 to 299")
+		for k in range(1, 300):
+			print_helper(k)
+	elif input_char.upper() == "Y":
+		k = int(input("Enter k and hit Return/Enter: "))
+		print_helper(k)
+	else:
+		continue
+	break
