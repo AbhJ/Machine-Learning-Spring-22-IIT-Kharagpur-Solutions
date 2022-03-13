@@ -1,4 +1,4 @@
-# Readme for Project 1
+# Readme for Project 2
 
 ### Submitted by Abhijay Mitra (18IE10001)
 
@@ -21,4 +21,3 @@
 In case of any further queries feel free to contact
 
  - Abhijay Mitra
- - mitraabhijay@gmail.com
