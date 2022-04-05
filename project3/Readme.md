@@ -9,6 +9,7 @@
  - The libraries used in the program are math, numpy, matplotlib, random and pandas and have been solely used for the purpose of import and extraction of data, and printing data in an orderly fashion. All necessary functions and methods for the purpose of the project have been self generated.
  - In case of difficulty to run the code with the github links for extracting the training and test data (line 11) due to internet or server issues, feel free to use any offline copy of the same.
  - In the functions **`dist`** and **`clusterMean`** non categorical data types and categorical data types have been handled separately as the distances for non categorical data types cannot be calculated as such and requires special handling.
+ - The plot of MSE with k has been plotted with **`18IE10001_p3.py`** and has been saved in this folder as **`plot.png`** for convinience
 
  ## Detailed explanations to the major functions/methods in the code
 
